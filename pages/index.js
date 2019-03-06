@@ -1,5 +1,4 @@
 import Layout from '../components/MyLayout.js'
-import Link from 'next/link'
 import fetch from 'isomorphic-unfetch'
 
 const Index = (props) => (
@@ -16,9 +15,6 @@ const Index = (props) => (
 )
 
 Index.getInitialProps = async function({req}) {
-
-    const res = await fetch('https://api.tvmaze.com/search/shows?q=batman')
-    const data = await res.json()
     let features= {};
     let featureKeys = [];
     if( req ){
@@ -38,11 +34,7 @@ Index.getInitialProps = async function({req}) {
         }
     }
 
-    console.log(`Evaluated features ${features}`)
-    console.log(`Show data fetched. Count: ${data.length}`)
-
   return {
-    shows: data,
     features: features,
     featureKeys: featureKeys
   }

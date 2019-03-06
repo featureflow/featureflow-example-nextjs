@@ -1,7 +1,7 @@
 
 const express = require('express')
 const next = require('next')
-const Featureflow = require('../../featureflow-sdks/featureflow-node-sdk');
+const Featureflow = require('featureflow-node-sdk');
 
 const dev = process.env.NODE_ENV !== 'production'
 const app = next({ dev })
