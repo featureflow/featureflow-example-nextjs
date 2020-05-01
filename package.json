@@ -14,8 +14,8 @@
     "express": "^4.15.2",
     "featureflow-node-sdk": "^0.6.7",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^6.1.1",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "next": "^9.3.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
